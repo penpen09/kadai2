@@ -13,7 +13,7 @@ $(document).ready(function(){
     // 変数「sum」に
     // [国語の点数,英語の点数,数学の点数,理科の点数,社会の点数]をそれぞれ足します。
     // ヒント! 配列を一つづつ取り出して足していきます。
-    let sum = subject_points.reduce(function(a, b) {
+    let sum = subject_points.reduce(function(a, b) {//追加課題１
 
       return a + b;
 
@@ -105,7 +105,7 @@ $(document).ready(function(){
   // 「最終ジャッジ」(class="btn-declaration")ボタンを押したら「function judgement()」が出力される処理です。
   $('#btn-declaration').click(function() {
     $("#alert-indicate").remove();
-    $('#alert-indicate').text(judgement());
+    $('#alert-indicate').text(judgement());//追加課題２
   });
 });
 // ここに書かれているjsの記述はあくまでヒントとして用意された雛形なので、書かれている記述に従わずに実装したいという場合は、自分の好きに実装して構わない。課題要件を満たし、コードの品質が一定の水準にあると判定されればどのような実装でも合格になる。
